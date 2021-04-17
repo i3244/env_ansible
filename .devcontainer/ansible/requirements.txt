@@ -1,0 +1,10 @@
+ansible
+ansible-base
+cffi
+cryptography
+Jinja2
+pycparser
+six
+# for development.
+pipdeptree
+PyYAML

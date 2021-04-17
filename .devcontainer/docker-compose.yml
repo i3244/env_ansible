@@ -1,0 +1,25 @@
+---
+version: "3.8"
+services:
+  ansible:
+    build:
+      context: ./ansible
+      args:
+        http_proxy:     ${http_proxy}
+        https_proxy:    ${https_proxy}
+        VSCODE_USER_ID: ${VSCODE_USER_ID:-1000}
+    image: env_ansible
+
+    container_name: "env_ansible_1"
+    environment:
+      http_proxy:   ${http_proxy}
+      https_proxy:  ${https_proxy}
+    env_file:
+      - ./consts.env
+    network_mode: "host"
+    tty: true
+    user: vscode
+    volumes:
+      - ..:/workspace:cached
+      - ~/.ssh:/home/vscode/.ssh
+      - ./ansible/log:/var/log/ansible

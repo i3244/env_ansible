@@ -1,0 +1,6 @@
+---
+environment_name: dev
+
+# 'vault_db_password' is defined in 'vault' and encrypted with ansible-vault. 
+# The vault password to encrypt/decrypt should be defined in '.devcontainer/consts.env'.
+db_password: "{{ vault_db_password }}"

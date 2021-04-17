@@ -1,0 +1,5 @@
+consts.env
+
+### log ###
+ansible/log/*
+!.gitkeep
