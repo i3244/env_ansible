@@ -26,7 +26,6 @@
     "files.autoGuessEncoding": true,
     "files.associations": {
       "**/*.yml": "ansible",
-      "**/*.repo.j2": "jinja-properties",
     },
     "http.proxyStrictSSL": false,
     "terminal.integrated.shell.linux": "/bin/bash",
@@ -38,7 +37,6 @@
     "donjayamanne.githistory",
     "eamodio.gitlens",
     "geeksharp.openssl-configuration-file",
-    "haaaad.ansible",
     "hangxingliu.vscode-systemd-support",
     "mhutchie.git-graph",
     "ms-ceintl.vscode-language-pack-ja",
@@ -46,6 +44,7 @@
     "timonwong.ansible-autocomplete",
     "samuelcolvin.jinjahtml",
     "wyattferguson.jinja2-snippet-kit",
+    "zbr.vscode-ansible",
   ],
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   // "forwardPorts": [],
