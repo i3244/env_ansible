@@ -24,11 +24,16 @@
     "editor.tabSize": 2,
     "editor.autoIndent": "full",
     "files.autoGuessEncoding": true,
-    "files.associations": {
-      "**/*.yml": "ansible",
-    },
     "http.proxyStrictSSL": false,
-    "terminal.integrated.shell.linux": "/bin/bash",
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "terminal.integrated.profiles.linux": {
+      "bash": {
+        "path": "/bin/bash",
+        "args": [
+          "-l"
+        ],
+      },
+    },
     "yaml.format.enable": true,
     "yaml.trace.server": "verbose",
   },
@@ -36,15 +41,14 @@
   "extensions": [
     "donjayamanne.githistory",
     "eamodio.gitlens",
-    "geeksharp.openssl-configuration-file",
-    "hangxingliu.vscode-systemd-support",
     "mhutchie.git-graph",
     "ms-ceintl.vscode-language-pack-ja",
-    "ms-python.vscode-pylance",
-    "timonwong.ansible-autocomplete",
+    "ms-python.python",
+    "oderwat.indent-rainbow",
+    "redhat.ansible",
     "samuelcolvin.jinjahtml",
+    "timonwong.ansible-autocomplete",
     "wyattferguson.jinja2-snippet-kit",
-    "zbr.vscode-ansible",
   ],
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   // "forwardPorts": [],
